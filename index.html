@@ -22,7 +22,7 @@
         
         <div style="position: relative;">
           <img src="img/xyk.56d8a335.png" style="width: 100%; height: 100%;">
-          <div class="dept" id="dept"></div>
+          <div class="dept" id="dept">船舶海洋与建筑工程学院</div>
         </div>
         <div class="content">
           <div class="user">
@@ -35,7 +35,7 @@
           <div class="audit">
             <!---->
             <div id="date"></div>
-            <div id="campus"></div>
+            <div id="campus">闵行校区</div>
             <!---->
             <div class="audit-status success">审核通过</div></div>
         </div>
@@ -98,8 +98,8 @@
         function setInfo() {
             localStorage.setItem("username", prompt("请输入你的名字（不想填就**取消**）"));
             localStorage.setItem("userno", prompt("请输入你的学号（不想填就**取消**）"));
-            localStorage.setItem("userdept", prompt("请输入你的学院（不想填就**取消**）"));
-            localStorage.setItem("usercampus", prompt("请输入你的校区（不想填就**取消**）"));
+//             localStorage.setItem("userdept", prompt("请输入你的学院（不想填就**取消**）"));
+//             localStorage.setItem("usercampus", prompt("请输入你的校区（不想填就**取消**）"));
             window.location.reload();
         }
 
@@ -116,12 +116,12 @@
         // 设置学号
         var userno = document.getElementById("user-no");
         userno.innerHTML = localStorage.getItem("userno");
-        // 设置学院
-        var dept = document.getElementById("dept");
-        dept.innerHTML = localStorage.getItem("userdept");
-        // 设置校区
-        var campus = document.getElementById("campus");
-        campus.innerHTML = localStorage.getItem("usercampus");
+//         // 设置学院
+//         var dept = document.getElementById("dept");
+//         dept.innerHTML = localStorage.getItem("userdept");
+//         // 设置校区
+//         var campus = document.getElementById("campus");
+//         campus.innerHTML = localStorage.getItem("usercampus");
     </script>
   </body>
 
